@@ -1,0 +1,6 @@
+[submodule "bai"]
+	path = bai
+	url = https://github.com/nyzss/bai.git
+[submodule "mythril"]
+	path = mythril
+	url = https://github.com/nyzss/mythril.git
