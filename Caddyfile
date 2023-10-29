@@ -1,5 +1,5 @@
 nascent.dev {
-    reverse_proxy mythril:3000 {
+    reverse_proxy mythril:4000 {
         header_down Strict-Transport-Security max-age: 31536000
     }
 }
