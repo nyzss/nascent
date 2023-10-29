@@ -1,0 +1,11 @@
+nascent.dev {
+    reverse_proxy mythril:3000 {
+        header_down Strict-Transport-Security max-age: 31536000
+    }
+}
+
+api.nascent.dev {
+    reverse_proxy bai-api:3000 {
+        header_down Strict-Transport-Security max-age: 31536000
+    }
+}

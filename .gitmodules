@@ -1,0 +1,6 @@
+[submodule "bai"]
+	path = bai
+	url = .\\bai\\
+[submodule "mythril"]
+	path = mythril
+	url = .\\mythril\\
