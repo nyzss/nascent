@@ -3,8 +3,6 @@ version: '3'
 services:
   nascent-api:
     container_name: nascent-api 
-    # environment:
-      # DATABASE_URL: "postgres://postgres:${POSTGRES_PASSWORD}@db:5432"
     restart: unless-stopped
     build:
       context: ./bai
@@ -14,8 +12,6 @@ services:
 
   nascent-frontend:
     container_name: nascent-frontend 
-    # environment:
-      # DATABASE_URL: "postgres://postgres:${POSTGRES_PASSWORD}@db:5432"
     restart: unless-stopped
     build:
       context: ./mythril
