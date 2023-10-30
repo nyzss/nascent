@@ -4,6 +4,7 @@ nascent.dev {
         to *
         root *
     }
+    try_files {path} /index.html
     file_server
 }
 
