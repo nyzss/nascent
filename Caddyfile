@@ -3,8 +3,7 @@ nascent.dev {
         header_down Strict-Transport-Security max-age: 31536000
     }
     rewrite {
-        if    {path} not_match ^\/0.0.0.0
-        to    {path} {path}/ /?_url={uri}
+        to {path} /
     }
 }
 
