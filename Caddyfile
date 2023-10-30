@@ -2,6 +2,9 @@ nascent.dev {
     reverse_proxy nascent-frontend:8080 {
         header_down Strict-Transport-Security max-age: 31536000
     }
+    rewrite {
+        to {path} /
+    }
 }
 
 api.nascent.dev {
