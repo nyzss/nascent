@@ -1,3 +1,7 @@
 # nascent
 
-this is for deployment purposes, I have yet to do a CI/CD pipeline but it's coming soon.
+## this is for deployment purposes, I have yet to do a CI/CD pipeline but it's coming soon.
+
+**mythril** is the frontend using tauri for the desktop application, the stack is react, vite and typescript.
+
+**bai** is the backend and its sole purpose for now it's to proxy all requests and images from the mangadex api (necessary due to cors limitations), the web framework I am using is actix.
