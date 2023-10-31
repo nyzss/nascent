@@ -1,0 +1,24 @@
+name: deploy master
+
+on:
+  push:
+    branches: [master]
+
+# env:
+#   ENV_VAR: value
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: deploying latest build
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          # port: ${{ secrets.PORT }}
+          script: |
+            cd /var/nascent
+            ./deploy.sh
