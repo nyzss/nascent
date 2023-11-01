@@ -20,7 +20,7 @@ services:
       - "8080:8080"
 
   caddy:
-    image: caddy/caddy:2.7.5-alpine
+    image: caddy:2.7.5-alpine
     container_name: caddy-nascent
     restart: unless-stopped
     ports:
